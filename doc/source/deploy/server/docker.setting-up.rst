@@ -102,6 +102,12 @@ This command does the following:
 * |opt.pmm-server.latest| is the name and version tag of the image
   to derive the container from.
 
+.. note:: On very large PMM systems Prometheus cannot be stopped in 10 seconds
+   on ``docker stop`` command, and Docker kills all processes in a container
+   after 10 seconds. Killing Prometheus makes its database corrupted. To avoid
+   such possibility on a large PMM system, create |pmm-server| container with
+   additional ``--stop-timeout 600`` option.
+
 .. _pmm.docker.specific-version:
 
 `Installing and using specific docker version <docker.setting-up.html#pmm.docker.specific-version>`_
