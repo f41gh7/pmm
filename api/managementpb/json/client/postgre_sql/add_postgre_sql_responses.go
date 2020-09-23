@@ -180,6 +180,9 @@ type AddPostgreSQLBody struct {
 	// Skip TLS certificate and hostname validation. Uses sslmode=required instead of verify-full.
 	TLSSkipVerify bool `json:"tls_skip_verify,omitempty"`
 
+	// enables push model at exporter
+	PushModelEnabled bool `json:"push_model_enabled,omitempty"`
+
 	// add node
 	AddNode *AddPostgreSQLParamsBodyAddNode `json:"add_node,omitempty"`
 }

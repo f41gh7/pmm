@@ -196,6 +196,9 @@ type AddMySQLBody struct {
 	// Use negative value to disable them.
 	TablestatsGroupTableLimit int32 `json:"tablestats_group_table_limit,omitempty"`
 
+	// enables push model at exporter
+	PushModelEnabled bool `json:"push_model_enabled,omitempty"`
+
 	// add node
 	AddNode *AddMySQLParamsBodyAddNode `json:"add_node,omitempty"`
 }

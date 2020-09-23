@@ -66,6 +66,8 @@ message AddMongoDBRequest {
   bool tls = 17;
   // Skip TLS certificate and hostname validation.
   bool tls_skip_verify = 18;
+  // enables push model at exporter
+  bool push_model_enabled = 20;
 }
 
 message AddMongoDBResponse {

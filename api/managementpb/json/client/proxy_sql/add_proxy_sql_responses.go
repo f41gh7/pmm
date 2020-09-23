@@ -177,6 +177,9 @@ type AddProxySQLBody struct {
 	// Skip TLS certificate and hostname validation.
 	TLSSkipVerify bool `json:"tls_skip_verify,omitempty"`
 
+	// enables push model at exporter
+	PushModelEnabled bool `json:"push_model_enabled,omitempty"`
+
 	// add node
 	AddNode *AddProxySQLParamsBodyAddNode `json:"add_node,omitempty"`
 }

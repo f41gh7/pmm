@@ -79,6 +79,8 @@ message AddMySQLRequest {
   // If zero, server's default value is used.
   // Use negative value to disable them.
   int32 tablestats_group_table_limit = 21;
+  // enables push model at exporter
+  bool push_model_enabled = 23;
 }
 
 message AddMySQLResponse {

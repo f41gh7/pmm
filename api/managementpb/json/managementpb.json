@@ -1637,6 +1637,12 @@
                   "format": "int64",
                   "x-order": 5
                 },
+                "push_model_enabled": {
+                  "type": "boolean",
+                  "format": "boolean",
+                  "title": "enables push model at exporter",
+                  "x-order": 18
+                },
                 "qan_mongodb_profiler": {
                   "description": "If true, adds qan-mongodb-profiler-agent for provided service.",
                   "type": "boolean",
@@ -2080,6 +2086,12 @@
                   "type": "integer",
                   "format": "int64",
                   "x-order": 5
+                },
+                "push_model_enabled": {
+                  "type": "boolean",
+                  "format": "boolean",
+                  "title": "enables push model at exporter",
+                  "x-order": 22
                 },
                 "qan_mysql_perfschema": {
                   "description": "If true, adds qan-mysql-perfschema-agent for provided service.",
@@ -2572,6 +2584,12 @@
                   ],
                   "x-order": 0
                 },
+                "push_model_enabled": {
+                  "type": "boolean",
+                  "format": "boolean",
+                  "title": "enables push model at exporter",
+                  "x-order": 12
+                },
                 "region": {
                   "description": "Node region.",
                   "type": "string",
@@ -2915,6 +2933,12 @@
                   "type": "integer",
                   "format": "int64",
                   "x-order": 5
+                },
+                "push_model_enabled": {
+                  "type": "boolean",
+                  "format": "boolean",
+                  "title": "enables push model at exporter",
+                  "x-order": 18
                 },
                 "qan_postgresql_pgstatements_agent": {
                   "description": "If true, adds qan-postgresql-pgstatements-agent for provided service.",
@@ -3347,6 +3371,12 @@
                   "type": "integer",
                   "format": "int64",
                   "x-order": 5
+                },
+                "push_model_enabled": {
+                  "type": "boolean",
+                  "format": "boolean",
+                  "title": "enables push model at exporter",
+                  "x-order": 17
                 },
                 "replication_set": {
                   "description": "Replication set name.",

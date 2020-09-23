@@ -65,6 +65,8 @@ message AddProxySQLRequest {
   bool tls = 15;
   // Skip TLS certificate and hostname validation.
   bool tls_skip_verify = 16;
+  // enables push model at exporter
+  bool push_model_enabled = 18;
 }
 
 message AddProxySQLResponse {

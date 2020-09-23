@@ -67,6 +67,8 @@ message AddPostgreSQLRequest {
   bool tls = 16;
   // Skip TLS certificate and hostname validation. Uses sslmode=required instead of verify-full.
   bool tls_skip_verify = 17;
+  // enables push model at exporter
+  bool push_model_enabled = 23;
 }
 
 message AddPostgreSQLResponse {

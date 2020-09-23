@@ -196,6 +196,9 @@ type RegisterNodeBody struct {
 
 	// If true, and Node with that name already exist, it will be removed with all dependent Services and Agents.
 	Reregister bool `json:"reregister,omitempty"`
+
+	// enables push model at exporter
+	PushModelEnabled bool `json:"push_model_enabled,omitempty"`
 }
 
 // Validate validates this register node body
