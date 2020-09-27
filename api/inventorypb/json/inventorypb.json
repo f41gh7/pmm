@@ -5028,7 +5028,8 @@
                     "QAN_MONGODB_PROFILER_AGENT",
                     "QAN_POSTGRESQL_PGSTATEMENTS_AGENT",
                     "RDS_EXPORTER",
-                    "EXTERNAL_EXPORTER"
+                    "EXTERNAL_EXPORTER",
+                    "VMAGENT"
                   ],
                   "x-order": 3
                 },
